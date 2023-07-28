@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Citas - Mecánica</title>
+    <link rel="stylesheet" href="visualizarCitas.css">
+</head>
+<body>
+    <!-- Mover el iframe del header a la parte superior antes del contenido del container -->   
+    <!-- Colocar el contenido del container en el medio de la página -->
+    <div class="container">
+        <div class="title">Visualizar Citas</div>
+        <div class="content">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Nombre del cliente</th>
+                        <th>Servicio</th>
+                        <th>Teléfono</th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se generarán las filas de la tabla con los datos de las citas -->
+                    <!-- Suponemos que las citas están almacenadas en un arreglo llamado "citas" en formato JSON -->
+                    <script>
+                        const citas = [
+                            {
+                                "fecha": "2023-08-01",
+                                "hora": "09:00",
+                                "nombre": "Juan Pérez",
+                                "servicio": "Cambio de aceite",
+                                "telefono": "1234567890"
+                            },
+                            {
+                                "fecha": "2023-08-02",
+                                "hora": "11:30",
+                                "nombre": "María Gómez",
+                                "servicio": "Revisión de frenos",
+                                "telefono": "9876543210"
+                            }
+                            // Agrega más citas si es necesario
+                        ];
+
+                        
+
+                        citas.forEach(cita => {
+                            const newRow = document.createElement("tr");
+                            newRow.innerHTML = `
+                                <td>${cita.fecha}</td>
+                                <td>${cita.hora}</td>
+                                <td>${cita.nombre}</td>
+                                <td>${cita.servicio}</td>
+                                <td>${cita.telefono}</td>
+                            `;
+                            document.querySelector("tbody").appendChild(newRow);
+                        });
+                    </script>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <div class="button">
+            <input type="submit" value="Regresar" id="regresarButton">
+        </div>
+        
+        <!-- Tu código JavaScript -->
+        <script>
+            // Seleccionar el botón por su ID
+            var regresarButton = document.getElementById("regresarButton");
+        
+            // Agregar un evento de clic al botón
+            regresarButton.addEventListener("click", function() {
+                // Redireccionar a la página "index.html"
+                window.location.href = "/index.html";
+            });
+        </script>
+    </div>  
+</body>
+</html>

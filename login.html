@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<style>
+		.formulario button {
+			margin-top: 10px;
+		}
+	</style>
+	<script>
+		function validarFormulario() {
+			var usuario = document.getElementById("usuario").value;
+			var contrasena = document.getElementById("contrasena").value;
+
+			if (usuario === "" || contrasena === "") {
+				alert("Por favor, completa todos los campos.");
+				return false;
+			}
+		}
+
+		function bloquearAcceso() {
+			var mensaje = "Debe iniciar sesión para acceder a esta página.";
+			alert(mensaje); // Mostrar notificación de alerta, puedes personalizar esto con una ventana emergente más atractiva o un modal.
+			
+			// Redirigir al usuario a la página de inicio de sesión
+			window.location.href = "login.html";
+    }
+	</script>
+</head>
+<body>
+	<header>
+		<div class="interior">
+			<div class="logo">
+				<img src="/Imagenes/LogoMecanica.jpg" alt="Logo">
+			</div>
+			<nav class="navegacion">
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#" onclick="bloquearAcceso()">Acerca</a></li>
+					<li><a href="#" onclick="bloquearAcceso()">Servicios</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="formulario">
+			<h2>Iniciar sesión</h2>
+			<form action="index.html" onsubmit="return validarFormulario()">
+				<input type="text" id="usuario" placeholder="Usuario">
+				<input type="password" id="contrasena" placeholder="Contraseña">
+				<button type="submit">Iniciar sesión</button>
+			</form>
+			<form action="registro.html">
+				<button type="submit">Registrarse</button>
+			</form>
+		</div>
+	</main>
+</body>
+</html>

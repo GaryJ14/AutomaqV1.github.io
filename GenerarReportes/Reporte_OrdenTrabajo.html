@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte de Orden de Trabajo - Mecánica</title>
+    <link rel="stylesheet" type="text/css" href="Reporte.css">
+</head>
+<body>
+    <header>
+        <h1>Reporte de Orden de Trabajo</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Número de Orden</th>
+                    <th>Fecha</th>
+                    <th>Cliente</th>
+                    <th>Tareas Realizadas</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irán los datos de las órdenes de trabajo -->
+                <tr>
+                    <td>001</td>
+                    <td>2023-07-25</td>
+                    <td>Juan Pérez</td>
+                    <td>Cambio de aceite y filtros, Revisión de frenos</td>
+                    <td>$150.00</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>2023-07-26</td>
+                    <td>María Gómez</td>
+                    <td>Alineación y balanceo, Cambio de batería</td>
+                    <td>$200.00</td>
+                </tr>
+                <!-- Agrega más órdenes de trabajo si es necesario -->
+            </tbody>
+        </table>
+        <center>
+            <br>
+            <button onclick="imprimirReporte()">Imprimir Reporte</button>
+            <button><a href="/GestionarOrdenDeTrabajo/">Regresar </a></button>
+        </center>
+    </main>
+
+    <script>
+        function imprimirReporte() {
+            window.print();
+        }
+    </script>
+</body>
+</html>

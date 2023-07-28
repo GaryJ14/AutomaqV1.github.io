@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Citas - Mecánica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Creacion de una Cita - Mecánica</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Nombre Completo</span>
+                        <input type="text" placeholder="Ingrese los Nombres" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Fecha de la Cita</span>
+                        <input type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora de la Cita</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Servicio Requerido</span>
+                        <input type="text" placeholder="Ingrese el Servicio Requerido" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Número de Teléfono</span>
+                        <input type="tel" placeholder="Ingrese un Teléfono" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Correo Electrónico</span>
+                        <input type="email" placeholder="Ingrese un Correo Electrónico" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Vehiculo</span>
+                        <input type="tel" placeholder="Ingrese un Teléfono" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Placa</span>
+                        <input type="email" placeholder="Ingrese un Correo Electrónico" required>
+                    </div>
+                </div>
+                <br>
+                <div class="button">
+                    <input type="submit" value="Agendar Cita" id="AgregarCita">
+                </div>
+            
+                <!-- Tu código JavaScript -->
+                <script>
+                    // Seleccionar el botón por su ID
+                    var regresarButton = document.getElementById("AgregarCita");
+                
+                    // Agregar un evento de clic al botón
+                    regresarButton.addEventListener("click", function() {
+                        // Redireccionar a la página "index.html"
+                        window.location.href = "visualizarCitas.html";
+                    });
+                </script>
+
+
+                <div class="button">
+                    <input type="submit" value="Regresar">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

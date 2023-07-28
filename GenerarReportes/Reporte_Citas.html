@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte de Citas - Mecánica</title>
+    <link rel="stylesheet" type="text/css" href="Reporte.css">
+</head>
+<body>
+    <header>
+        <h1>Reporte de Citas</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Nombre del cliente</th>
+                    <th>Descripción del servicio</th>
+                    <th>Nombre del cliente</th>
+                    <th>Descripción del servicio</th>
+                    <th>Nombre del cliente</th>
+                    <th>Descripción del servicio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irán los datos de las citas -->
+                <tr>
+                    <td>2023-07-25</td>
+                    <td>Juan Pérez</td>
+                    <td>Juan Pérez</td>
+                    <td>Juan Pérez</td>
+                    <td>Juan Pérez</td>
+                    <td>Juan Pérez</td>
+                    <td>Cambio de aceite y filtros</td>
+                </tr>
+                <tr>
+                    <td>2023-07-26</td>
+                    <td>María Gómez</td>
+                    <td>Revisión de frenos</td>
+                    <td>María Gómez</td>
+                    <td>Revisión de frenos</td>
+                    <td>María Gómez</td>
+                    <td>Revisión de frenos</td>
+                </tr>
+                <!-- Agrega más citas si es necesario -->
+            </tbody>
+        </table>
+        <center>
+            <br>
+            <button onclick="imprimirReporte()">Imprimir Reporte</button>
+            <button><a href="/GestionarCitas/visualizarCitas.html">Regresar </a></button>
+
+        </center>
+        <!-- Botón para imprimir el reporte -->
+    </main>
+
+    <script>
+        function imprimirReporte() {
+            window.print();
+        }
+    </script>
+</body>
+</html>

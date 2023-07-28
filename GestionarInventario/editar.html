@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventario</title>
+  <link rel="stylesheet" href="editar.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Inventario</h1>
+    <form id="addItemForm">
+      <div class="item-input">
+        <input type="text" id="itemName" placeholder="Nombre del artículo" required>
+      </div>
+      <div class="quantity-input">
+        <input type="number" id="itemQuantity" placeholder="Cantidad" required>
+      </div>
+      <button type="submit">Agregar</button>
+    </form>
+    
+    <ul id="inventoryList">
+      <!-- Aquí se agregarán los elementos del inventario -->
+    </ul>
+    <div>
+      <button><a href="/index.html">REGRESAR</a></button>
+    </div>
+    <div>
+      <button><a href="/GenerarReportes/Reporte_Inventario.html">GENERAR REPORTE
+      </a></button>
+    </div>
+  </div>
+  <script src="editar.js"></script>
+  
+</body>
+</html>

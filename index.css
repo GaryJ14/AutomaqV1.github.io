@@ -1,0 +1,198 @@
+/* Estilos generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: "Open Sans", sans-serif;
+  }
+  
+  body {
+	background-color: rgb(202, 199, 255);
+  }
+  
+  /* Estilos del encabezado y la navegación */
+  header {
+	width: 100%;
+	height: 90px;
+	background-color: rgb(152, 146, 255);
+  }
+  
+  .interior {
+	max-width: 100%;
+	padding: 0 10px;
+	margin: auto;
+  }
+  
+  .logo {
+	float: left;
+	padding: 5px 20px 0;
+  }
+  
+  .logo img {
+	height: 90px;
+	display: inline-block;
+	padding: 10px;
+	border-radius: 50%; /* Redondea el borde del logo */
+  }
+  
+  .logo img:hover {
+	transform: scale(1.1);
+  }
+  
+  .navegacion {
+	float: right;
+	display: flex;
+	align-items: center;
+	min-height: 90px;
+	z-index: 1000;
+  }
+  
+  .navegacion ul {
+	list-style: none;
+	padding: 0 10px;
+  }
+  
+  .navegacion ul li {
+	display: inline-block;
+	position: relative;
+	transition: .3s linear;
+	z-index: 1000;
+  }
+  
+  .navegacion ul li:hover {
+	transform: scale(1.1);
+  }
+  
+  .navegacion ul li a {
+	color: #FFFFFF; /* Cambia el color del texto a blanco */
+	text-align: justify;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 8px 20px;
+	transition: .7s linear;
+  }
+  
+  .navegacion ul li a:hover {
+	color: #000000; /* Cambia el color del texto a negro */
+	transform: scale(1.1);
+  }
+  
+  .navegacion ul li:hover .hijos {
+	display: block;
+  }
+  
+  /* Estilos para el submenú */
+  .navegacion .submenu .hijos {
+	display: none;
+	background: rgb(152, 146, 255);
+	position: absolute;
+	width: 120px;
+	top: 100%;
+	left: 0;
+  }
+  
+  .navegacion .submenu .hijos li {
+	display: block;
+	overflow: hidden;
+	border-bottom: none;
+  }
+  
+  .navegacion .submenu .hijos li a {
+	display: block;
+	color: #FFFFFF;
+	text-align: left;
+	padding: 8px 10px;
+  }
+  
+  .pro {
+	text-decoration: underline;
+  }
+  
+  /* Estilos de la sección de héroe */
+  .hero {
+	background-image: url('hero-background.jpg');
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	padding: 50px;
+  }
+  
+  .hero h1 {
+	font-size: 36px;
+	margin-bottom: 20px;
+  }
+  
+  .hero p {
+	font-size: 18px;
+	margin-bottom: 30px;
+  }
+  
+  .btn {
+	display: inline-block;
+	background-color: #ff6600;
+	color: #fff;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 4px;
+  }
+  
+  /* Estilos de la sección de servicios */
+  .services {
+	text-align: center;
+	padding: 50px 0;
+  }
+  
+  .services h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+  }
+  
+  .service {
+	display: inline-block;
+	text-align: left;
+	width: 300px;
+	margin: 0 20px;
+  }
+  
+  .service img {
+	width: 100%;
+	max-height: 200px;
+	object-fit: cover;
+	margin-bottom: 10px;
+  }
+  
+  .service h3 {
+	font-size: 20px;
+	margin-bottom: 10px;
+  }
+  
+  .service p {
+	font-size: 14px;
+  }
+  
+  /* Estilos de la sección de contacto */
+  .contact {
+	background-color: rgb(152, 146, 255);
+	text-align: center;
+	padding: 50px;
+  }
+  
+  .contact h2 {
+	font-size: 24px;
+	margin-bottom: 20px;
+  }
+  
+  .contact p {
+	font-size: 16px;
+  }
+  
+  /* Estilos del pie de página */
+  footer {
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+  }
+  

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Reporte de Inventario - Mecánica</title>
+    <link rel="stylesheet" type="text/css" href="Reporte.css">
+</head>
+<body>
+    <header>
+        <h1>Reporte de Inventario</h1>
+    </header>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irán los datos del inventario -->
+                <tr>
+                    <td>Aceite para motor</td>
+                    <td>50 litros</td>
+                    <td>$50.00</td>
+                    <td>$2,500.00</td>
+                </tr>
+                <tr>
+                    <td>Filtro de aceite</td>
+                    <td>100 unidades</td>
+                    <td>$5.00</td>
+                    <td>$500.00</td>
+                </tr>
+                <!-- Agrega más productos al inventario si es necesario -->
+            </tbody>
+        </table>
+        <center>
+            <br>
+            <button onclick="imprimirReporte()">Imprimir Reporte</button>
+            <button><a href="/GestionarInventario/editar.html">Regresar </a></button>
+
+            
+        </center>
+    </main>
+
+    <script>
+        function imprimirReporte() {
+            window.print();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Horarios Disponibles</title>
+    <link rel="stylesheet" href="registroHor.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Registro de los horarios disponibles</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Días trabajados</span>
+                        <label><input type="checkbox" name="diasTrabajados" value="lunes">L </label>
+                        <label><input type="checkbox" name="diasTrabajados" value="martes">M</label>
+                        <label><input type="checkbox" name="diasTrabajados" value="miercoles">M</label>
+                        <label><input type="checkbox" name="diasTrabajados" value="jueves">J</label>
+                        <label><input type="checkbox" name="diasTrabajados" value="viernes">V</label>
+                        <label><input type="checkbox" name="diasTrabajados" value="sabado">S</label>
+                        <label><input type="checkbox" name="diasTrabajados" value="domingo">D</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Días no laborables:</span>
+                        <label><input type="checkbox" name="diasNoLaborables" value="feriado">Feriados</label>
+                        <label><input type="checkbox" name="diasNoLaborables" value="vacaciones">Vacaciones</label>
+                        <label><input type="checkbox" name="diasNoLaborables" value="otros">Otros</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora De Apertura</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora de cierre</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Intervalo de tiempo</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Observaciones:</span>
+                        <textarea placeholder="Ingrese las Observaciones" required></textarea>
+                    </div>
+                </div>
+
+                <br>
+                <div class="Registro1">
+                    <a class="Registro" href="VisualizarCli.html">Registrarse</a>
+                </div>
+                <br>
+                <div class="Volver">
+                    <a class="Registro" href="/index.html">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

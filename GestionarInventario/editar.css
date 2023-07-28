@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: rgb(202, 199, 255);
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(152, 146, 255);
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.item-input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.item-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.quantity-input {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.quantity-input input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(152, 146, 255);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(122, 116, 225);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+.logo img {
+  height: 90px;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.logo img:hover {
+  transform: scale(1.1);
+}
+
+.navegacion ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navegacion ul li {
+  margin-left: 20px;
+}
+
+.navegacion ul li a {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 8px 20px;
+  transition: .7s linear;
+  border-radius: 5px;
+}
+
+.navegacion ul li a:hover {
+  color: #000000;
+  background-color: rgb(152, 146, 255);
+}
+
+.navegacion .submenu .hijos {
+  display: none;
+  background: rgb(152, 146, 255);
+  position: absolute;
+  width: 120px;
+}
+
+.navegacion .submenu:hover .hijos {
+  display: block;
+}
+
+.navegacion .submenu .hijos li {
+  display: block;
+  overflow: hidden;
+  border-bottom: none;
+}
+
+.navegacion .submenu .hijos li a {
+  display: block;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.pro {
+  text-decoration: underline;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Horarios Disponibles</title>
+    <link rel="stylesheet" href="visualizarHor.css">
+</head>
+
+<body>
+    <header>
+        <div class="interior">
+            <a class="logo" target="blank"><img src="/Imagenes/img.png" alt=""></a>
+            <nav class="navegacion">
+                <ul>
+                    <!-- Menú y submenús omitidos para simplificar el ejemplo -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="title">Registro de Horarios Disponibles</div>
+        <div class="content">
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Días trabajados</span>
+                        <select multiple required>
+                            <optgroup label="Días de la semana">
+                                <option value="lunes">Lunes</option>
+                                <option value="martes">Martes</option>
+                                <option value="miercoles">Miércoles</option>
+                                <option value="jueves">Jueves</option>
+                                <option value="viernes">Viernes</option>
+                                <option value="sabado">Sábado</option>
+                                <option value="domingo">Domingo</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora De Apertura</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Hora de cierre</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Intervalo de tiempo</span>
+                        <input type="time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Días no laborables:</span>
+                        <select multiple required>
+                            <option value="feriado">Feriados</option>
+                            <option value="vacaciones">Vacaciones</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Observaciones:</span>
+                        <textarea placeholder="Ingrese las Observaciones" required></textarea>
+                    </div>
+                </div>
+
+                <br>
+                <div class="Registro1">
+                    <a class="Registro" href="VisualizarCli.html">Registrarse</a>
+                </div>
+                <br>
+                <div class="Volver">
+                    <a class="Registro" href="/index.html">Regresar</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
